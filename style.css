@@ -77,8 +77,8 @@ body {
     transform: scale(1.1);
 }
 
-.view.hidden {
-    display: none;
+.hidden {
+    display: none !important;
 }
 
 /* Study View */
