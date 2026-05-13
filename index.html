@@ -28,12 +28,22 @@
 
         <div id="quiz-view" class="view hidden">
             <div class="quiz-container">
-                <div class="score-board">점수: <span id="score">0</span>점</div>
+                <div class="score-board">점수: <span id="score">0</span> / 200점</div>
                 <div id="question" class="question-text">? × ? = ?</div>
                 <div id="choices" class="choices-grid">
                     <!-- 보기가 여기에 생성됩니다 -->
                 </div>
                 <div id="quiz-feedback" class="feedback"></div>
+            </div>
+        </div>
+
+        <!-- 만점 축하 화면 -->
+        <div id="victory-screen" class="victory-overlay hidden">
+            <div class="victory-content">
+                <h1>🎊 축하합니다! 🎊</h1>
+                <p>200점 만점을 받았어요!</p>
+                <div class="victory-badge">⭐ 구구단 박사 ⭐</div>
+                <button id="restart-btn" class="mode-btn active">다시 도전하기</button>
             </div>
         </div>
     </div>
