@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✨우주최강 구구단 마스터✨</title>
+    <title>🌈 뾰로롱 구구단 나라 🌈</title>
     <link rel="stylesheet" href="style.css">
     <!-- 초등학생이 좋아하는 통통 튀는 Jua 폰트 로드 -->
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
@@ -11,11 +11,30 @@
 <body>
     <div class="container">
         <h1 class="title">🌈 뾰로롱 구구단 나라 🌈</h1>
-        <div class="buttons" id="buttons-container">
-            <!-- 자바스크립트로 1~9단 버튼이 생성됩니다 -->
+        
+        <div class="mode-selector">
+            <button id="mode-study" class="mode-btn active">📖 구구단 보기</button>
+            <button id="mode-quiz" class="mode-btn">🎮 구구단 퀴즈</button>
         </div>
-        <div id="result-board" class="board">
-            <p class="placeholder">보고 싶은 단을<br>눌러보세요! ✨</p>
+
+        <div id="study-view" class="view">
+            <div class="buttons" id="buttons-container">
+                <!-- 자바스크립트로 1~9단 버튼이 생성됩니다 -->
+            </div>
+            <div id="result-board" class="board">
+                <p class="placeholder">보고 싶은 단을<br>눌러보세요! ✨</p>
+            </div>
+        </div>
+
+        <div id="quiz-view" class="view hidden">
+            <div class="quiz-container">
+                <div class="score-board">점수: <span id="score">0</span>점</div>
+                <div id="question" class="question-text">? × ? = ?</div>
+                <div id="choices" class="choices-grid">
+                    <!-- 보기가 여기에 생성됩니다 -->
+                </div>
+                <div id="quiz-feedback" class="feedback"></div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
